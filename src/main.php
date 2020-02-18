@@ -1,20 +1,14 @@
 <?php
 
-require '../vendor/autoload.php';
+require("../vendor/autoload.php");
+require("./logging.php");
 
-echo("hello world" . PHP_EOL);
-echo(implode("; ", scandir("../")));
+$title = "Familie feest";
 
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
+require("header.php");
 
-// create a log channel
-$log = new Logger('name');
-$log->pushHandler(new StreamHandler('../logs/main.log', Logger::WARNING));
+require("content.php");
 
-// add records to the log
-$log->warning('Foo');
-$log->error('Bar');
-
+require("footer.php");
 
 ?>
