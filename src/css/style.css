@@ -31,6 +31,7 @@ nav.navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: blue;
@@ -50,6 +51,12 @@ nav.navbar > a {
 
 nav.navbar > a:hover {
     background-color: rgba(200, 200, 256, 0.5);
+}
+
+nav.navbar > .navLang {
+    flex-grow: 0;
+    padding: 1em;
+    margin: 1em;
 }
 
 div.content {
