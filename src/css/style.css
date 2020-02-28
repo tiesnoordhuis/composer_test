@@ -21,6 +21,10 @@ header {
     flex: 0 1;
 }
 
+.hidden {
+    display: none;
+}
+
 h1.navTitle {
     flex: initial;
     font-size: 4em;

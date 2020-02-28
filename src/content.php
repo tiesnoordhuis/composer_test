@@ -8,4 +8,8 @@
     <h2>
         Geef je maaltijd voorkeur op!
     </h2>
+    <?php
+        require("menuChoice.php");
+    ?>
+
 </div>
